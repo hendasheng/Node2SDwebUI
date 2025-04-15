@@ -3,7 +3,7 @@
 [简体中文](README.md) | [English](README_EN.md)
 
 ## Install Stable Diffusion Web UI  
-`https://github.com/AUTOMATIC1111/stable-diffusion-webui`
+[Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 ### Make sure the API mode of SD Web UI is enabled  
 - Open the `webui-user.bat` file  

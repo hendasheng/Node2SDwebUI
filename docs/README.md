@@ -3,7 +3,7 @@
 [简体中文](README.md) | [English](README_EN.md)
 
 ## 安装 Stable Diffusion web UI
-`https://github.com/AUTOMATIC1111/stable-diffusion-webui`
+[Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 ### 确保 SD web UI AIP 模式正确启用
 - 打开 webui-user.bat 文件；
@@ -18,7 +18,7 @@
     - `cd A1111_stable-diffusion-webui`
     - `cd webui`
     - `.\webui-user.bat --api`
-    
+
 - 运行 NODE2SDwebUI：
     - `cd NODE2SDWEBUI`
     - `cd main`
