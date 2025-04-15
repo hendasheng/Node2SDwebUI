@@ -3,9 +3,9 @@ const fs = require("fs");
 const path = require("path");
 
 // 确保 output 文件夹存在
-const outputDir = path.join(__dirname, "output");
+const outputDir = path.join(__dirname, "..", "output");
 if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir);
+  fs.mkdirSync(outputDir, { recursive: true });
 }
 
 async function txt2img() {
@@ -29,8 +29,9 @@ async function txt2img() {
     const base64Image = res.data.images[0];
     
     // 生成带时间戳的文件名
-    const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+    const timestamp = new Date().toISOString().replace(/[:.]/g, "-").replace(/\s/g, "").trim();
     const filename = path.join(outputDir, `output-${timestamp}.png`);
+    console.log("📝 即将保存到路径：", filename);
 
     fs.writeFileSync(filename, Buffer.from(base64Image, "base64"));
     console.log(`✅ 成功生成图像，保存为 ${filename}`);

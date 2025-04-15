@@ -4,9 +4,9 @@ const path = require("path");
 const readline = require("readline");
 
 // 创建 output 文件夹（如果不存在）
-const outputDir = path.join(__dirname, "output");
+const outputDir = path.join(__dirname, "..", "output");
 if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir);
+  fs.mkdirSync(outputDir, { recursive: true });
 }
 
 // 创建命令行输入接口
