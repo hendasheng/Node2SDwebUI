@@ -1,0 +1,5 @@
+# 忽略虚拟环境目录
+myenv/
+node_modules/
+.DS_Store
+output/
